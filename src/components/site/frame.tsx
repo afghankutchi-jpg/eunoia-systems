@@ -3,6 +3,7 @@ import { useEffect, useState, type ReactNode } from "react";
 import { Menu, X } from "lucide-react";
 import { company, services } from "@/lib/site";
 import { useScrollProgress } from "@/components/site/motion";
+import { ParticleField } from "@/components/site/particles";
 
 const links = [
   { to: "/services", label: "Services" },
@@ -25,11 +26,15 @@ export function SiteFrame({ children }: { children: ReactNode }) {
 
   return (
     <div className="min-h-screen text-ink">
+      <div className="relative z-10">
       <div className="atmosphere" aria-hidden>
         <div className="atmosphere-wash" />
-        <div className="atmosphere-grid" />
+        <div className="orb orb-a" />
+        <div className="orb orb-b" />
+        <div className="orb orb-c" />
+        <div className="atmosphere-sheen" />
       </div>
-      <div className="relative z-10">
+      <ParticleField />
       <div className="fixed inset-x-0 top-0 z-50 h-0.5 origin-left bg-copper" style={{ width: `${progress * 100}%` }} />
       <a href="#content" className="sr-only focus:not-sr-only focus:absolute focus:left-4 focus:top-4 focus:z-50 focus:bg-white focus:px-3 focus:py-2">
         Skip to content
