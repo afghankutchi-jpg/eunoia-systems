@@ -77,7 +77,7 @@ function Home() {
           ].map((card) => (
             <Reveal key={card.title}>
               <Link to="/services/$slug" params={{ slug: card.slug }} className="flex h-full flex-col rounded-3xl border border-line bg-white p-6 hover:border-signal">
-                <p className="text-sm text-copper">{card.kicker}</p>
+                <p className="text-sm text-signal">{card.kicker}</p>
                 <h3 className="display mt-3 text-3xl">{card.title}</h3>
                 <p className="mt-3 flex-1 text-ink-soft">{card.body}</p>
                 <span className="mt-6 inline-flex items-center gap-1 text-sm font-medium text-signal">
@@ -95,7 +95,7 @@ function Home() {
           {services.map((service, index) => (
             <Reveal key={service.slug} delay={index * 40}>
               <Link to="/services/$slug" params={{ slug: service.slug }} className="group grid gap-3 rounded-3xl border border-line bg-white p-6 md:grid-cols-[auto_1fr] md:gap-6">
-                <span className="display text-copper">{String(index + 1).padStart(2, "0")}</span>
+                <span className="display text-signal">{String(index + 1).padStart(2, "0")}</span>
                 <span>
                   <span className="flex items-start justify-between gap-4">
                     <span className="display text-3xl">{service.title}</span>

@@ -22,7 +22,7 @@ export function TrajectoryChart() {
               }}
             />
             <Area type="monotone" dataKey="clean" name="Clean claims %" stroke="var(--color-signal)" fill="var(--color-signal-2)" strokeWidth={2} />
-            <Area type="monotone" dataKey="denials" name="Denial %" stroke="var(--color-copper)" fill="var(--color-copper-2)" strokeWidth={2} />
+            <Area type="monotone" dataKey="denials" name="Denial %" stroke="var(--color-pine-2)" fill="var(--color-copper-2)" strokeWidth={2} />
           </AreaChart>
         </ResponsiveContainer>
       ) : (

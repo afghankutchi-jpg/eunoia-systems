@@ -57,7 +57,7 @@ function SpecialtiesPage() {
         <div className="mt-8 grid gap-4 md:grid-cols-2">
           {visible.map((item) => (
             <article key={item.name} className="rounded-3xl border border-line bg-white p-6">
-              <p className="text-sm text-copper">{item.group}</p>
+              <p className="text-sm text-signal">{item.group}</p>
               <h2 className="display mt-2 text-3xl">{item.name}</h2>
               <p className="mt-3 text-ink-soft">{item.note}</p>
             </article>

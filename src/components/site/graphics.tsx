@@ -119,7 +119,7 @@ export function CycleStory() {
       <ol className="grid gap-4 md:hidden">
         {cycle.map((item) => (
           <li key={item.id} className="rounded-3xl border border-line bg-white p-5">
-            <p className="text-sm text-copper">{item.id}</p>
+            <p className="text-sm text-signal">{item.id}</p>
             <h3 className="display mt-2 text-2xl">{item.title}</h3>
             <p className="mt-2 text-ink-soft">{item.body}</p>
           </li>

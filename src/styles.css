@@ -4,20 +4,20 @@
   --font-display: "Fraunces", "Iowan Old Style", Georgia, serif;
   --font-sans: "Outfit", system-ui, sans-serif;
 
-  --color-ink: #102028;
-  --color-ink-soft: #24343d;
-  --color-paper: #f4f0e7;
-  --color-paper-2: #ebe6db;
-  --color-white: #fffcf7;
-  --color-pine: #0d332f;
-  --color-pine-2: #14564e;
-  --color-signal: #1b7a6d;
-  --color-signal-2: #d7efe9;
-  --color-copper: #c17a45;
-  --color-copper-2: #f3e2d2;
-  --color-muted: #5d6b72;
-  --color-line: #ddd6c8;
-  --color-danger: #8d3b3b;
+  --color-ink: #1c1233;
+  --color-ink-soft: #43385a;
+  --color-paper: #f7f4fc;
+  --color-paper-2: #efe8f8;
+  --color-white: #fcfbff;
+  --color-pine: #2e1065;
+  --color-pine-2: #4c1d95;
+  --color-signal: #6d28d9;
+  --color-signal-2: #e9d5ff;
+  --color-copper: #c4b5fd;
+  --color-copper-2: #ede9fe;
+  --color-muted: #6b6280;
+  --color-line: #ddd4ee;
+  --color-danger: #9b3d5c;
 }
 
 @layer base {

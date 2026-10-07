@@ -34,7 +34,7 @@ function ProcessPage() {
         <ol className="mx-auto max-w-6xl px-5">
           {cycle.map((step) => (
             <li key={step.id} className="grid gap-4 border-b border-line py-10 md:grid-cols-12">
-              <p className="display text-copper md:col-span-2">{step.id}</p>
+              <p className="display text-signal md:col-span-2">{step.id}</p>
               <h2 className="display text-4xl md:col-span-3">{step.title}</h2>
               <p className="text-lg text-ink-soft md:col-span-7">{step.body}</p>
             </li>

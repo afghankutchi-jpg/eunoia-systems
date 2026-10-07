@@ -34,7 +34,7 @@ function WhoPage() {
           <div className="mt-8 grid gap-4 md:grid-cols-3">
             {models.map((model, index) => (
               <article key={model.title} className="rounded-3xl bg-paper p-6">
-                <p className="text-sm text-copper">{String(index + 1).padStart(2, "0")}</p>
+                <p className="text-sm text-signal">{String(index + 1).padStart(2, "0")}</p>
                 <h3 className="display mt-2 text-3xl">{model.title}</h3>
                 <p className="mt-3 text-ink-soft">{model.body}</p>
               </article>

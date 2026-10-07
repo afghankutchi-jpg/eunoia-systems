@@ -29,7 +29,7 @@ function ServicesPage() {
             params={{ slug: service.slug }}
             className="grid gap-4 rounded-3xl border border-line bg-white p-6 md:grid-cols-12 md:items-center"
           >
-            <span className="display text-copper md:col-span-1">{String(index + 1).padStart(2, "0")}</span>
+            <span className="display text-signal md:col-span-1">{String(index + 1).padStart(2, "0")}</span>
             <span className="md:col-span-4">
               <span className="display block text-3xl">{service.title}</span>
               <span className="text-sm text-signal">{service.eyebrow}</span>

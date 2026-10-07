@@ -56,7 +56,7 @@ function ServicePage() {
         <ol className="mt-8 grid gap-4 md:grid-cols-4">
           {service.steps.map((step, index) => (
             <li key={step.title} className="rounded-3xl border border-line p-5">
-              <p className="text-sm text-copper">{String(index + 1).padStart(2, "0")}</p>
+              <p className="text-sm text-signal">{String(index + 1).padStart(2, "0")}</p>
               <h3 className="mt-2 text-lg font-medium">{step.title}</h3>
               <p className="mt-2 text-ink-soft">{step.body}</p>
             </li>

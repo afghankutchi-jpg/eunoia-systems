@@ -42,7 +42,7 @@ export function CtaBand({
         <Link
           to="/contact"
           search={{ interest: "" }}
-          className="tap inline-flex min-h-12 items-center justify-center rounded-full bg-copper px-6 font-medium text-ink"
+          className="tap inline-flex min-h-12 items-center justify-center rounded-full bg-signal px-6 font-medium text-paper"
         >
           Request a revenue review
         </Link>
@@ -58,7 +58,7 @@ export function FaqList({ items = faqs }: { items?: { q: string; a: string }[] }
         <details key={item.q} className="group py-5">
           <summary className="flex min-h-12 cursor-pointer items-center justify-between gap-6 text-lg font-medium text-ink">
             {item.q}
-            <span className="text-copper transition group-open:rotate-45" aria-hidden>
+            <span className="text-signal transition group-open:rotate-45" aria-hidden>
               +
             </span>
           </summary>
