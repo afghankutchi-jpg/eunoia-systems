@@ -1,4 +1,4 @@
-import { mkdir, readFile, readdir, writeFile, rm } from "node:fs/promises";
+import { cp, mkdir, readFile, readdir, writeFile, rm } from "node:fs/promises";
 import { execFile } from "node:child_process";
 import { promisify } from "node:util";
 import path from "node:path";
@@ -119,13 +119,26 @@ async function main() {
     html = html.replace(/<link\b[^>]*rel="icon"[^>]*>/gi, "");
     html = html.replace(/<link\b[^>]*apple-touch-icon[^>]*>/gi, "");
     html = rewriteLinks(html);
+    html = html.replaceAll('src="/images/', 'src="images/');
     html = html.replace("</head>", `<style>${css}</style></head>`);
     html = html.replace("</body>", `${boot}</body>`);
     const file = path.join(outDir, fileFor(route));
     await writeFile(file, html);
     console.log(route, "->", path.basename(file), html.length);
   }
-  await exec("zip", ["-qr", zipPath, "."], { cwd: outDir });
+  await cp("/workspace/public/images", path.join(outDir, "images"), { recursive: true });
+  await exec("python3", [
+    "-c",
+    `import zipfile
+from pathlib import Path
+src = Path(${JSON.stringify(outDir)})
+dest = Path(${JSON.stringify(zipPath)})
+with zipfile.ZipFile(dest, "w", compression=zipfile.ZIP_DEFLATED) as zf:
+    for path in src.rglob("*"):
+        if path.is_file():
+            zf.write(path, path.relative_to(src).as_posix())
+print(dest, dest.stat().st_size)`,
+  ]);
   console.log("zip", zipPath);
 }
 

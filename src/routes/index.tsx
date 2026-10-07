@@ -23,7 +23,15 @@ export const Route = createFileRoute("/")({
 function Home() {
   return (
     <>
-      <section className="mx-auto grid max-w-6xl items-center gap-12 px-5 py-16 md:grid-cols-12 md:py-24">
+      <section className="relative overflow-hidden">
+        <div className="absolute inset-0 hidden md:block">
+          <img src="/images/lobby.jpg" alt="" className="photo-ken h-full w-full object-cover" />
+        </div>
+        <div className="absolute inset-0 hidden bg-gradient-to-r from-paper via-paper/90 to-paper/35 md:block" />
+        <div className="relative mx-auto grid max-w-6xl items-center gap-8 px-5 py-10 md:grid-cols-12 md:gap-12 md:py-24">
+        <div className="overflow-hidden rounded-3xl md:hidden">
+          <img src="/images/lobby.jpg" alt="Empty clinic lobby in violet morning light" className="photo-ken h-56 w-full object-cover" />
+        </div>
         <div className="md:col-span-7">
           <p className="text-sm font-medium tracking-wide text-signal">Austin, Texas · Revenue cycle management</p>
           <h1 className="display mt-4 text-5xl text-ink md:text-7xl">Revenue that keeps time with care.</h1>
@@ -41,16 +49,32 @@ function Home() {
           <p className="mt-8 text-sm text-muted">{company.tagline}</p>
         </div>
         <div className="min-w-0 md:col-span-5">
-          <div className="rounded-3xl border border-line bg-white p-6">
-            <RevenueDial />
-            <div className="mt-4">
-              <ClaimBeads />
+          <div className="relative overflow-hidden rounded-3xl border border-line bg-white p-6">
+            <img src="/images/rings.jpg" alt="" className="photo-ken pointer-events-none absolute inset-0 h-full w-full object-cover opacity-35" />
+            <div className="relative">
+              <RevenueDial />
+              <div className="mt-4">
+                <ClaimBeads />
+              </div>
             </div>
           </div>
+        </div>
         </div>
       </section>
 
       <Marquee items={specialties.map((item) => item.name)} />
+
+      <section className="photo-band relative overflow-hidden">
+        <img
+          src="/images/corridor.jpg"
+          alt="Empty clinic corridor lit in violet, with no signage and no people"
+          className="photo-ken h-full w-full object-cover"
+        />
+        <div className="absolute inset-0 bg-pine/50" />
+        <div className="absolute inset-x-0 bottom-0 mx-auto flex max-w-6xl items-end px-5 py-8">
+          <p className="display max-w-xl text-3xl text-paper md:text-5xl">The room stays with the patient. The ledger does not.</p>
+        </div>
+      </section>
 
       <section className="mx-auto max-w-6xl px-5 py-16">
         <div className="grid gap-px overflow-hidden rounded-3xl border border-line bg-line sm:grid-cols-2 lg:grid-cols-3">

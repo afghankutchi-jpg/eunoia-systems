@@ -20,6 +20,11 @@ function AboutPage() {
         title="Beautiful thinking, applied to an unbeautiful process."
         lede="Eunoia is the Greek word for beautiful thinking. The company uses it literally: revenue cycle work done with enough care that a practice can see what happened and why."
       />
+      <div className="mx-auto max-w-6xl px-5 pt-12">
+        <div className="overflow-hidden rounded-3xl">
+          <img src="/images/desk.jpg" alt="A desk of unreadable files, a pen, and lilac light" className="photo-ken aspect-video w-full object-cover" />
+        </div>
+      </div>
       <article className="mx-auto max-w-6xl px-5 py-16">
         <div className="grid gap-12 md:grid-cols-12">
           <div className="space-y-5 text-lg text-ink-soft md:col-span-7">

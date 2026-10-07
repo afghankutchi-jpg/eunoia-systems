@@ -22,7 +22,12 @@ function ProcessPage() {
         lede="Revenue cycle is a loop, which is why the graphics on this site refuse to sit still. Skip a station and the loop comes back as a denial, an aging bucket, or a patient who does not understand the bill."
       />
       <section className="mx-auto grid max-w-6xl items-center gap-10 px-5 py-16 md:grid-cols-2">
-        <RevenueDial />
+        <div className="relative overflow-hidden rounded-3xl bg-pine p-4">
+          <img src="/images/rings.jpg" alt="Glass rings turning in violet light" className="photo-ken absolute inset-0 h-full w-full object-cover opacity-50" />
+          <div className="relative">
+            <RevenueDial />
+          </div>
+        </div>
         <div>
           <ClaimBeads />
           <p className="mt-6 text-lg text-ink-soft">

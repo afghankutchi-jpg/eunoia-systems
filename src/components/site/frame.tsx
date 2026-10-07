@@ -24,7 +24,12 @@ export function SiteFrame({ children }: { children: ReactNode }) {
   }, [open]);
 
   return (
-    <div className="min-h-screen bg-paper text-ink">
+    <div className="min-h-screen text-ink">
+      <div className="atmosphere" aria-hidden>
+        <div className="atmosphere-wash" />
+        <div className="atmosphere-grid" />
+      </div>
+      <div className="relative z-10">
       <div className="fixed inset-x-0 top-0 z-50 h-0.5 origin-left bg-copper" style={{ width: `${progress * 100}%` }} />
       <a href="#content" className="sr-only focus:not-sr-only focus:absolute focus:left-4 focus:top-4 focus:z-50 focus:bg-white focus:px-3 focus:py-2">
         Skip to content
@@ -153,6 +158,7 @@ export function SiteFrame({ children }: { children: ReactNode }) {
           </p>
         </div>
       </footer>
+      </div>
     </div>
   );
 }
