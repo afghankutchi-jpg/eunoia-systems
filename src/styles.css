@@ -4,20 +4,24 @@
   --font-display: "Fraunces", "Iowan Old Style", Georgia, serif;
   --font-sans: "Outfit", system-ui, sans-serif;
 
-  --color-ink: #1c1233;
-  --color-ink-soft: #43385a;
+  --color-ink: #12081c;
+  --color-ink-soft: #241433;
   --color-paper: #f7f4fc;
   --color-paper-2: #efe8f8;
   --color-white: #fcfbff;
   --color-pine: #2e1065;
   --color-pine-2: #4c1d95;
-  --color-signal: #6d28d9;
-  --color-signal-2: #e9d5ff;
-  --color-copper: #c4b5fd;
+  --color-signal: #5b21b6;
+  --color-signal-2: #f3e8ff;
+  --color-copper: #e9d5ff;
   --color-copper-2: #ede9fe;
-  --color-muted: #6b6280;
+  --color-muted: #3a314c;
   --color-line: #ddd4ee;
   --color-danger: #9b3d5c;
+
+  --font-weight-normal: 600;
+  --font-weight-medium: 700;
+  --font-weight-semibold: 700;
 }
 
 @layer base {
@@ -29,7 +33,7 @@
     background: var(--color-paper);
     color: var(--color-ink);
     line-height: 1.55;
-    font-weight: 400;
+    font-weight: 600;
     text-rendering: optimizeLegibility;
     overflow-x: clip;
   }
@@ -54,7 +58,7 @@
 
 .display {
   font-family: var(--font-display);
-  font-weight: 560;
+  font-weight: 700;
   letter-spacing: -0.03em;
   line-height: 1.05;
 }

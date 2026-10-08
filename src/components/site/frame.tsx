@@ -113,8 +113,8 @@ export function SiteFrame({ children }: { children: ReactNode }) {
           </nav>
         </div>
       ) : null}
-      <main id="content">{children}</main>
-      <footer className="border-t border-line bg-paper-2">
+      <main id="content" className="relative z-40">{children}</main>
+      <footer className="relative z-40 border-t border-line bg-paper-2">
         <div className="mx-auto grid max-w-6xl gap-10 px-5 py-14 md:grid-cols-12">
           <div className="md:col-span-4">
             <p className="display text-3xl">Eunoia Systems</p>
