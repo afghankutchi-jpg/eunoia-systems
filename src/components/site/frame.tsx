@@ -41,18 +41,8 @@ export function SiteFrame({ children }: { children: ReactNode }) {
       </a>
       <header className="sticky top-0 z-40 border-b border-line/80 bg-paper/90 backdrop-blur">
         <div className="mx-auto flex max-w-6xl items-center justify-between gap-4 px-5 py-3">
-          <Link to="/" className="flex items-center gap-3" onClick={() => setOpen(false)}>
-            <span className="grid h-10 w-10 place-items-center rounded-full border border-pine text-pine">
-              <svg viewBox="0 0 32 32" className="h-6 w-6" aria-hidden>
-                <circle cx="16" cy="16" r="11" fill="none" stroke="currentColor" strokeWidth="1.4" />
-                <path d="M16 6.5a9.5 9.5 0 0 1 0 19" fill="none" stroke="currentColor" strokeWidth="1.4" />
-                <circle cx="16" cy="16" r="2" fill="currentColor" />
-              </svg>
-            </span>
-            <span>
-              <span className="display block text-xl leading-none">Eunoia</span>
-              <span className="text-xs tracking-wide text-muted">Systems</span>
-            </span>
+          <Link to="/" className="inline-flex shrink-0 items-center rounded-full bg-ink px-3 py-1.5" onClick={() => setOpen(false)}>
+            <img src="/logo-wordmark.png" alt="Eunoia Systems" className="h-9 w-auto sm:h-10" />
           </Link>
           <nav className="hidden items-center gap-6 lg:flex" aria-label="Primary">
             {links.map((link) => (
@@ -117,7 +107,7 @@ export function SiteFrame({ children }: { children: ReactNode }) {
       <footer className="relative z-40 border-t border-line bg-paper-2">
         <div className="mx-auto grid max-w-6xl gap-10 px-5 py-14 md:grid-cols-12">
           <div className="md:col-span-4">
-            <p className="display text-3xl">Eunoia Systems</p>
+            <img src="/logo-wordmark.png" alt="Eunoia Systems" className="h-12 w-auto rounded-full bg-ink px-4 py-2" />
             <p className="mt-3 max-w-xs text-ink-soft">{company.tagline}</p>
             <p className="mt-6 text-sm text-ink-soft">
               {company.address}
