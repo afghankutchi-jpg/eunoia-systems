@@ -23,7 +23,7 @@ void main() {
   float d = dot(v_uv, v_uv);
   if (d > 1.0) discard;
   float alpha = smoothstep(1.0, 0.2, d);
-  gl_FragColor = vec4(v_color, alpha * 0.9);
+  gl_FragColor = vec4(v_color, alpha * 0.45);
 }
 `;
 
@@ -81,7 +81,7 @@ export function ParticleField() {
     let running = true;
 
     const spawn = () => {
-      count = Math.max(180, Math.min(900, Math.floor((width * height) / 1400)));
+      count = Math.max(80, Math.min(220, Math.floor((width * height) / 6000)));
       points = new Float32Array(count * 6);
       for (let i = 0; i < count; i += 1) {
         const color = PALETTE[i % PALETTE.length] ?? PALETTE[0];

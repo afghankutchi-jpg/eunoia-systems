@@ -43,12 +43,9 @@ function ServicePage() {
       <section className="border-y border-line">
         <div className="mx-auto max-w-6xl px-5 py-16">
           <h2 className="display text-4xl">What the practice receives</h2>
-          <ol className="mt-8 grid gap-3 md:grid-cols-2">
-            {service.record.map((item, index) => (
-              <li key={item} className="rounded-3xl border border-line bg-white p-5">
-                <p className="text-sm text-signal">{String(index + 1).padStart(2, "0")}</p>
-                <p className="mt-2 text-lg text-ink">{item}</p>
-              </li>
+          <ol className="mt-8 divide-y divide-line border-y border-line">
+            {service.record.map((item) => (
+              <li key={item} className="py-4 text-lg text-ink">{item}</li>
             ))}
           </ol>
         </div>
@@ -56,11 +53,11 @@ function ServicePage() {
       <section className="border-y border-line bg-white">
         <div className="mx-auto max-w-6xl px-5 py-16">
           <h2 className="display text-4xl">What is actually done</h2>
-          <div className="mt-8 grid gap-4 md:grid-cols-2 lg:grid-cols-3">
+          <div className="mt-8 divide-y divide-line border-y border-line">
             {service.capabilities.map((item) => (
-              <article key={item.title} className="rounded-3xl bg-paper p-5">
-                <h3 className="text-lg font-medium">{item.title}</h3>
-                <p className="mt-2 text-ink-soft">{item.body}</p>
+              <article key={item.title} className="grid gap-2 py-6 md:grid-cols-12 md:gap-8">
+                <h3 className="text-lg font-medium md:col-span-4">{item.title}</h3>
+                <p className="text-ink-soft md:col-span-8">{item.body}</p>
               </article>
             ))}
           </div>
@@ -68,12 +65,12 @@ function ServicePage() {
       </section>
       <section className="mx-auto max-w-6xl px-5 py-16">
         <h2 className="display text-4xl">How an engagement moves</h2>
-        <ol className="mt-8 grid gap-4 md:grid-cols-4">
+        <ol className="mt-8 divide-y divide-line border-y border-line">
           {service.steps.map((step, index) => (
-            <li key={step.title} className="rounded-3xl border border-line p-5">
-              <p className="text-sm text-signal">{String(index + 1).padStart(2, "0")}</p>
-              <h3 className="mt-2 text-lg font-medium">{step.title}</h3>
-              <p className="mt-2 text-ink-soft">{step.body}</p>
+            <li key={step.title} className="grid gap-2 py-6 md:grid-cols-12 md:gap-8">
+              <p className="text-signal md:col-span-1">{String(index + 1).padStart(2, "0")}</p>
+              <h3 className="text-lg font-medium md:col-span-3">{step.title}</h3>
+              <p className="text-ink-soft md:col-span-8">{step.body}</p>
             </li>
           ))}
         </ol>
@@ -81,20 +78,19 @@ function ServicePage() {
       <section className="bg-pine text-ivory">
         <div className="mx-auto max-w-6xl px-5 py-16">
           <h2 className="display text-4xl">Standards for this work</h2>
-          <ul className="mt-8 grid gap-3 md:grid-cols-2">
+          <ul className="mt-8 max-w-3xl space-y-3">
             {service.standards.map((item) => (
-              <li key={item} className="rounded-2xl border border-pine-2 px-4 py-4 text-signal-2">{item}</li>
+              <li key={item} className="text-lg text-signal-2">{item}</li>
             ))}
           </ul>
         </div>
       </section>
       <section className="mx-auto max-w-6xl px-5 py-16">
         <h2 className="display text-3xl">Continues into</h2>
-        <div className="mt-6 grid gap-3 md:grid-cols-3">
+        <div className="mt-6 flex flex-col gap-3">
           {related.map((item) => (
-            <Link key={item.slug} to="/services/$slug" params={{ slug: item.slug }} className="rounded-3xl border border-line bg-white p-5 hover:border-signal">
-              <p className="display text-2xl">{item.title}</p>
-              <p className="mt-2 text-sm text-ink-soft">{item.summary}</p>
+            <Link key={item.slug} to="/services/$slug" params={{ slug: item.slug }} className="text-lg text-signal">
+              {item.title}
             </Link>
           ))}
         </div>

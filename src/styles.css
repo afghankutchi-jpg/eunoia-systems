@@ -247,6 +247,7 @@ summary {
   position: absolute;
   border-radius: 999px;
   filter: blur(2px);
+  opacity: 0.35;
 }
 .orb-a {
   top: -8vh;
@@ -279,7 +280,7 @@ summary {
   width: 35%;
   height: 160%;
   background: linear-gradient(90deg, transparent, #c6b48a 45%, transparent);
-  opacity: 0.55;
+  opacity: 0.22;
   animation: sheen 7s linear infinite;
 }
 .atmosphere-grid {
