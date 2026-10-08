@@ -77,7 +77,7 @@ function ContactPage() {
           </label>
           {error ? <p className="text-danger">{error}</p> : null}
           {sent ? <p className="text-signal">Your email app should open with this note addressed to {company.email}. If it does not, write us directly.</p> : null}
-          <button type="submit" className="tap min-h-12 rounded-full bg-pine px-6 font-medium text-paper">
+          <button type="submit" className="tap min-h-12 rounded-full bg-signal px-6 font-medium text-on-gold">
             Open email to Eunoia
           </button>
           <p className="text-sm text-muted">
@@ -85,7 +85,7 @@ function ContactPage() {
           </p>
         </form>
         <aside className="md:col-span-5">
-          <div className="rounded-3xl bg-pine p-8 text-paper">
+          <div className="rounded-3xl bg-pine p-8 text-ivory">
             <p className="text-sm tracking-wide text-copper">Direct</p>
             <a href={company.phoneHref} className="display mt-4 block text-3xl">{company.phone}</a>
             <a href={`mailto:${company.email}`} className="mt-2 block text-signal-2">{company.email}</a>

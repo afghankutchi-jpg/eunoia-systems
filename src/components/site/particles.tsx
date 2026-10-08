@@ -28,10 +28,10 @@ void main() {
 `;
 
 const PALETTE = [
-  [0.36, 0.13, 0.71],
-  [0.49, 0.23, 0.93],
-  [0.55, 0.36, 0.96],
-  [0.42, 0.18, 0.78],
+  [0.78, 0.71, 0.54],
+  [0.89, 0.83, 0.68],
+  [0.62, 0.51, 0.32],
+  [0.95, 0.92, 0.84],
 ];
 
 function compile(gl: WebGLRenderingContext, type: number, source: string) {

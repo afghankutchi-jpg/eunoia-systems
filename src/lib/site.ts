@@ -21,6 +21,7 @@ export type Service = {
   capabilities: { title: string; body: string }[];
   steps: { title: string; body: string }[];
   standards: string[];
+  record: string[];
   related: string[];
 };
 
@@ -35,6 +36,8 @@ export const services: Service[] = [
     paragraphs: [
       "Eunoia Systems organizes the front of the practice so collections and the schedule move together. Appointments are created, confirmed, and protected. Demographics are verified instead of copied forward. Coverage is checked before the visit, not after a denial.",
       "The team handles the administrative conversation patients actually have — reminders, referrals, questions, and payments — while clinicians stay with care. The process is written down, measured, and adjusted to the way each office already runs.",
+      "A front desk fails in small, repeating ways: an eligibility response left in a portal, an authorization that was ‘pending’ for nine days, a referral that never left the fax machine, a copay waived because nobody knew the deductible had reset. Each of those is a claim that will be born already wounded. The engagement treats them as a queue with an owner, not as interruptions between patients.",
+      "Work is done in the practice’s own scheduler and practice-management system. Patients still call the number on the door. What changes is that the answer, the verification, and the financial conversation follow a standard the office can inspect. When a payer or a plan rule changes, the checklist changes with it, and the desk is told before the next Monday rush.",
     ],
     capabilities: [
       { title: "Scheduling and confirmation", body: "Books are built with intention. Reminders and confirmation calls reduce no-shows without turning the desk into a call center." },
@@ -56,6 +59,13 @@ export const services: Service[] = [
       "Demographics updated at every encounter",
       "Patient estimates explained in plain language",
     ],
+    record: [
+      "A visit-type checklist: what must be true before the patient is roomed",
+      "A daily eligibility and authorization queue with a status on every open item",
+      "Confirmation and no-show counts, so the schedule is managed instead of mourned",
+      "A script for copays, deductibles, and prior balances the desk can say without improvising",
+      "A monthly note on the questions patients keep asking, sent back to the practice",
+    ],
     related: ["medical-billing", "patient-financials", "denial-management"],
   },
   {
@@ -68,6 +78,8 @@ export const services: Service[] = [
     paragraphs: [
       "Documentation is read before codes are chosen. Charges are entered against the encounter, scrubbed, and submitted inside filing limits. Payments are posted and reconciled so the ledger matches what the payer and the patient actually did.",
       "The operating standard published with this work is a 98% first-pass acceptance rate, aging held under 90 days, and a billing cycle that does not depend on one person remembering the worklist. Reports are built for the practice, not pulled from a generic template and emailed unread.",
+      "The path is concrete. A note is read. A charge is compared with that note. The claim is scrubbed for the errors that actually bounce this specialty — missing referring provider, a diagnosis that does not support the procedure, a modifier, a unit, an authorization number that was never attached. What fails the scrub is corrected before it spends a week in a payer’s reject file.",
+      "After the claim leaves, it is not ‘submitted’ and forgotten. Accepted, rejected, and pended files are worked on a clock. Payments are posted to the line, not as a lump that hides an underpayment. Contractual adjustments are separated from patient responsibility, and from write-offs that nobody decided. If a balance remains, it has one of three next homes: an appeal, a statement, or an explicit close.",
     ],
     capabilities: [
       { title: "Charge integrity", body: "Demographics, charges, and documentation are checked before a claim leaves. Rework is more expensive than a careful first pass." },
@@ -89,6 +101,13 @@ export const services: Service[] = [
       "Every underpayment has an owner",
       "Statements a patient can understand without calling",
     ],
+    record: [
+      "Charge, submission, and rejection logs tied to the encounter, not to a week-ending batch",
+      "A first-pass acceptance figure, read beside denial rate and aging — never alone",
+      "Underpayment exceptions with the contract amount, the paid amount, and the next action",
+      "Patient statements on the practice’s cadence, in an order a person can follow",
+      "A monthly report shaped to the administrator who actually reads it",
+    ],
     related: ["denial-management", "ar-recovery", "coding-integrity"],
   },
   {
@@ -101,6 +120,8 @@ export const services: Service[] = [
     paragraphs: [
       "Practices come to this work with a backlog, A/R days above their own benchmark, too few people to follow up, and write-offs that were never really decided. The recovery is paced: older claims first, because they expire, then the pattern of denials that created them.",
       "Follow-up is polite and persistent with payers. Patient balances are explained in writing a person can act on. If the practice wants the team to speak with patients directly, that is scoped. If not, the statements and the worklist still move.",
+      "The first pass through an aging book is an inventory, not a collection call. Every open claim is sorted by whether it can still be paid: inside a filing limit, inside an appeal window, missing a document the practice still has, or finished. Only the last group is a write-off conversation. The others get a next action and a date.",
+      "Low-dollar claims are worked as a class. They are too small to escalate one by one and too numerous to skip. A recovery that reports only the large wins flatters the average and leaves the volume that filled the bucket. As claims close, the reason they aged — late charges, a missing authorization, a payer that never received the corrected claim — is written down and handed back to billing.",
     ],
     capabilities: [
       { title: "Inventory, not a sample", body: "Unresolved claims are reviewed as a population, including low-dollar items that still belong to the practice." },
@@ -122,6 +143,13 @@ export const services: Service[] = [
       "Underpayments appealed with a reason code",
       "Recovered cash distinguished from timing shifts",
     ],
+    record: [
+      "An opening inventory: age, payer, dollars, and whether the claim can still be collected",
+      "A worklist ordered by filing and appeal dates, not by which claim looks easy",
+      "Corrected claims and appeals with the document the payer asked for attached",
+      "A separation of recovered cash from payments that were only slow",
+      "A short list of the upstream causes that built the backlog, given to billing and the front office",
+    ],
     related: ["denial-management", "medical-billing", "patient-financials"],
   },
   {
@@ -134,6 +162,8 @@ export const services: Service[] = [
     paragraphs: [
       "The work starts by gathering what payers actually ask for, then submitting and watching it. Medicare, Medicaid, and commercial panels are handled as separate clocks. Re-credentialing is calendared early enough that a lapse does not become a denial trend.",
       "Where a panel is closed, IPA routes are used when they are real. EDI, ERA, and EFT are enrolled so payments do not arrive as paper. Contract terms are read. When the practice wants a renegotiation, the file is prepared with volumes and current allowables — not a hopeful phone call.",
+      "Enrollment is a project with dates. Licenses, malpractice, DEA, board status, W-9, and the practice details payers actually compare are gathered once and kept current. Each plan receives the packet it requires. Status is chased until the result is written: approved, returned, or declined. A verbal ‘you should be fine’ is not an effective date, and billing is not told to submit into that fog.",
+      "Re-credentialing is opened months before the lapse, on a calendar the practice can see. CAQH attestations sit on the same calendar. A beautiful application attached to a stale profile still waits. After approval, EDI, ERA, and EFT are confirmed against a live remit. The first claims after a new enrollment are watched, because that is when a silent setup error introduces itself as a denial trend.",
     ],
     capabilities: [
       { title: "Initial enrollment", body: "Applications are assembled, submitted, and statused until the effective date is in writing." },
@@ -155,6 +185,13 @@ export const services: Service[] = [
       "EFT confirmed against a live remit",
       "Application status reported without the practice having to ask",
     ],
+    record: [
+      "A complete provider file: licenses, malpractice, DEA, board status, and practice identifiers",
+      "A payer-by-payer status with the last action and the next date, not a feeling",
+      "Written effective dates before claims are released for that clinician",
+      "Re-credentialing opened before the lapse window, with CAQH on the same calendar",
+      "EDI, ERA, and EFT confirmed when a remit matches a deposit",
+    ],
     related: ["medical-billing", "front-office", "value-based-care"],
   },
   {
@@ -167,6 +204,8 @@ export const services: Service[] = [
     paragraphs: [
       "Denied and unpaid claims are categorized by reason, payer, provider, and origin — registration, authorization, coding, timely filing, medical necessity, or a contract issue. Each category has a different fix. Treating them as one pile wastes the filing window.",
       "Appeals go out with the record the payer asked for. Recurring causes are taken back to scheduling, eligibility, or coding. The practice sees the rate, the dollars, and the two or three reasons that explain most of the loss.",
+      "Denials are not one pile. A missing authorization, a diagnosis that does not support the procedure, a timely-filing miss, a medical-necessity review, and a contract underpayment have different clocks and different owners. Working them as a single appeal queue burns the window on items that cannot be paid and neglects the ones that can.",
+      "Each month the practice gets the denial rate, the dollars still open, the overturn rate, and the causes ranked. Preventable registration and authorization denials are shown apart from clinical disputes. Write-offs are named. An appeal is not closed because the list felt long. It is closed because it was paid, upheld, or explicitly abandoned with a reason.",
     ],
     capabilities: [
       { title: "Identify", body: "The reason code is translated into a cause a manager can act on, not left as payer jargon." },
@@ -188,6 +227,13 @@ export const services: Service[] = [
       "Preventable denials separated from clinical ones",
       "Overturns posted, not just celebrated",
     ],
+    record: [
+      "A denial log tagged by reason, payer, clinician, and whether it can still be paid",
+      "Appeals filed inside the limit, with the note, auth, or corrected claim attached",
+      "The top causes named every month, in language a manager can act on",
+      "Preventable denials separated from clinical disputes",
+      "A changed checklist at the front of the cycle when a reason keeps repeating",
+    ],
     related: ["ar-recovery", "medical-billing", "front-office"],
   },
   {
@@ -200,6 +246,8 @@ export const services: Service[] = [
     paragraphs: [
       "Coverage is translated into an estimate before or at the visit, using the practice’s fee schedule and what the plan has already said. After adjudication, the statement shows what insurance paid, what was adjusted, and what remains — in that order.",
       "Payment options follow the physician’s direction. The tone stays direct and respectful. The goal is a settled balance and a patient who will come back, not a surprise invoice three months later.",
+      "The statement is a letter, not a remittance advice. The useful order is human: what was done, what insurance paid, what was adjusted, what remains, how to pay, and who to ask. A ledger that opens with a contractual-adjustment code is accurate and unpaid. When an estimate was wrong, the statement says so. A short explanation outperforms a corrected total with no story.",
+      "Patient accounts receivable and insurance accounts receivable are reported apart. A family is not a slow commercial payer, and a pended claim is not a collections problem. Staff stop making the wrong phone call. Balances end in a state: paid, on a plan the practice approved, disputed, or written off. Silence is not one of the states.",
     ],
     capabilities: [
       { title: "Estimates", body: "Expected patient responsibility is calculated before the balance becomes a grievance." },
@@ -221,6 +269,13 @@ export const services: Service[] = [
       "No balance sent that staff cannot explain",
       "Collection tone set by the practice, then kept",
     ],
+    record: [
+      "Estimates the desk can say before or at the visit, from the fee schedule and the benefit",
+      "Statements in a fixed order: service, paid, adjusted, due, how to pay, who to ask",
+      "A cadence for reminders, so a balance is not discovered at month four",
+      "Patient A/R reported separately from insurance A/R",
+      "Every open balance closed to paid, plan, dispute, or write-off",
+    ],
     related: ["front-office", "medical-billing", "ar-recovery"],
   },
   {
@@ -233,6 +288,8 @@ export const services: Service[] = [
     paragraphs: [
       "The transition fails when a practice changes its clinical model and forgets that payers still adjudicate claims, still deny for authorization, and still expect a credentialed clinician. Revenue cycle discipline is the floor. Quality reporting and contract terms sit on top of it.",
       "Engagements start by naming which contracts are fee-for-service, which are pay-for-performance, and which put a panel of patients on the practice. Each one has different data, different deadlines, and a different definition of a good month.",
+      "The operational work is unglamorous and specific. Attribution rosters are compared with the patients the practice actually sees. Quality measures are captured where the encounter happens, not reconstructed from memory at audit time. Leakage — patients attributed here and cared for elsewhere — is visible. Fee-for-service yield is kept on its own page so a value contract cannot hide a claims problem, and a claims problem cannot be mistaken for a failed contract.",
+      "The shift is paced. One arrangement is learned while the old book is still collected. Deadlines, quality gates, and who owns the data are written down before a workflow changes. A blended dashboard that produces a single encouraging number is refused.",
     ],
     capabilities: [
       { title: "Contract reading", body: "Payment terms, quality gates, and attribution rules are written in operational language." },
@@ -254,6 +311,13 @@ export const services: Service[] = [
       "Attribution reviewed, not assumed",
       "No blended report that hides a failing contract",
     ],
+    record: [
+      "A map of every arrangement: fee-for-service, pay-for-performance, or attributed panel",
+      "Two books of reporting, so current cash and contract performance are not blended",
+      "Quality measures tied to the encounter that created them",
+      "An attribution review: who is on the roster, who was seen, who leaked",
+      "A quarterly read of cash, quality, and the workflow change that follows",
+    ],
     related: ["medical-billing", "compliance", "coding-integrity"],
   },
   {
@@ -266,6 +330,8 @@ export const services: Service[] = [
     paragraphs: [
       "Audits are samples with a purpose: a new clinician, a new payer rule, a denial reason that keeps returning, or a service line whose yield dropped without a volume drop. Findings are specific — a missing element in the note, a modifier, a unit, a diagnosis that does not support the procedure.",
       "Education goes back to the people who write the notes and the people who enter the charges. A report that never changes the next week’s claims was only a document.",
+      "An audit here is a sample with a reason: a new clinician, a new payer rule, a denial that keeps returning, or a service line whose yield fell without a drop in volume. Encounters are read beside the codes and the charges. Findings name the missing element — a history, a modifier, a unit, a diagnosis that does not support the procedure — and they name the dollars left behind by under-coding with the same seriousness as the risk in over-coding.",
+      "The result is not a binder. Patterns are separated from one-off typos. Education is given to coding, to billing, and to the people who write the notes, in the language each of them uses. The same slice is sampled again after the change. Improvement is observed, or the workflow is changed again. A single snapshot is not an audit.",
     ],
     capabilities: [
       { title: "Focused audits", body: "Samples are chosen around risk: new services, outlier clinicians, and denial-prone codes." },
@@ -286,6 +352,13 @@ export const services: Service[] = [
       "Under-coding reported with the same seriousness as risk",
       "Education delivered to the people who can change next week",
       "A follow-up sample, not a single snapshot",
+    ],
+    record: [
+      "A sample chosen around risk, with the encounters named",
+      "Note-to-code findings: what is unsupported, what was missed, and what it is worth",
+      "Under-coding listed beside compliance risk, not treated as a compliment",
+      "Education for the clinician, the coder, and the biller — separately, because they fix different things",
+      "A second sample after the change, so the pattern is confirmed or the work continues",
     ],
     related: ["medical-billing", "denial-management", "compliance"],
   },

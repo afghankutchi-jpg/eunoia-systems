@@ -47,7 +47,7 @@ function SpecialtiesPage() {
                 key={item}
                 type="button"
                 onClick={() => setGroup(item)}
-                className={`tap min-h-11 rounded-full px-4 text-sm ${group === item ? "bg-pine text-paper" : "border border-line bg-white text-ink"}`}
+                className={`tap min-h-11 rounded-full px-4 text-sm ${group === item ? "bg-signal text-on-gold" : "border border-line bg-white text-ink"}`}
               >
                 {item}
               </button>

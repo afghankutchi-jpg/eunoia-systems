@@ -28,15 +28,30 @@ function ServicePage() {
           <p className="text-sm font-medium tracking-wide text-signal">{service.eyebrow}</p>
           <h1 className="display mt-4 max-w-4xl text-4xl md:text-6xl">{service.title}</h1>
           <p className="mt-6 max-w-2xl text-lg text-ink-soft">{service.lede}</p>
-          <Link to="/contact" search={{ interest: service.title }} className="tap mt-8 inline-flex min-h-12 items-center rounded-full bg-pine px-6 font-medium text-paper">
+          <Link to="/contact" search={{ interest: service.title }} className="tap mt-8 inline-flex min-h-12 items-center rounded-full bg-signal px-6 font-medium text-on-gold">
             Discuss {service.name.toLowerCase()}
           </Link>
         </div>
       </header>
-      <section className="mx-auto grid max-w-6xl gap-6 px-5 py-16 md:grid-cols-2">
-        {service.paragraphs.map((paragraph) => (
-          <p key={paragraph.slice(0, 24)} className="text-lg text-ink-soft">{paragraph}</p>
-        ))}
+      <section className="mx-auto max-w-3xl px-5 py-16">
+        <div className="space-y-6">
+          {service.paragraphs.map((paragraph) => (
+            <p key={paragraph.slice(0, 24)} className="text-lg text-ink-soft">{paragraph}</p>
+          ))}
+        </div>
+      </section>
+      <section className="border-y border-line">
+        <div className="mx-auto max-w-6xl px-5 py-16">
+          <h2 className="display text-4xl">What the practice receives</h2>
+          <ol className="mt-8 grid gap-3 md:grid-cols-2">
+            {service.record.map((item, index) => (
+              <li key={item} className="rounded-3xl border border-line bg-white p-5">
+                <p className="text-sm text-signal">{String(index + 1).padStart(2, "0")}</p>
+                <p className="mt-2 text-lg text-ink">{item}</p>
+              </li>
+            ))}
+          </ol>
+        </div>
       </section>
       <section className="border-y border-line bg-white">
         <div className="mx-auto max-w-6xl px-5 py-16">
@@ -63,7 +78,7 @@ function ServicePage() {
           ))}
         </ol>
       </section>
-      <section className="bg-pine text-paper">
+      <section className="bg-pine text-ivory">
         <div className="mx-auto max-w-6xl px-5 py-16">
           <h2 className="display text-4xl">Standards for this work</h2>
           <ul className="mt-8 grid gap-3 md:grid-cols-2">

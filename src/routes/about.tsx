@@ -42,7 +42,7 @@ function AboutPage() {
             </p>
           </div>
           <aside className="md:col-span-5">
-            <div className="rounded-3xl bg-pine p-8 text-paper">
+            <div className="rounded-3xl bg-pine p-8 text-ivory">
               <p className="text-sm tracking-wide text-copper">Mission</p>
               <p className="mt-3 text-lg">
                 Specialty-focused outsourcing that helps practices move toward value-based care while insurance and patient financials are still managed with discipline.

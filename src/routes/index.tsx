@@ -39,7 +39,7 @@ function Home() {
             Eunoia Systems runs the financial machinery of a practice — from the schedule to the last balance — so clinicians stay with patients and cash stops leaking between the encounter and the bank.
           </p>
           <div className="mt-8 flex flex-wrap gap-3">
-            <Link to="/contact" search={{ interest: "" }} className="tap inline-flex min-h-12 items-center rounded-full bg-pine px-6 font-medium text-paper">
+            <Link to="/contact" search={{ interest: "" }} className="tap inline-flex min-h-12 items-center rounded-full bg-signal px-6 font-medium text-on-gold">
               Request a revenue review
             </Link>
             <Link to="/process" className="tap inline-flex min-h-12 items-center rounded-full border border-line bg-white px-6 font-medium text-ink">
@@ -49,7 +49,7 @@ function Home() {
           <p className="mt-8 text-sm text-muted">{company.tagline}</p>
         </div>
         <div className="min-w-0 md:col-span-5">
-          <div className="rounded-3xl bg-ink px-8 py-8">
+          <div className="rounded-3xl bg-pine px-8 py-8">
             <img src="/logo-gold.png" alt="Eunoia Systems" className="mx-auto w-full max-w-sm" />
           </div>
           <div className="relative mt-4 overflow-hidden rounded-3xl border border-line bg-white p-6">
@@ -75,7 +75,7 @@ function Home() {
         />
         <div className="absolute inset-0 bg-pine/50" />
         <div className="absolute inset-x-0 bottom-0 mx-auto flex max-w-6xl items-end px-5 py-8">
-          <p className="display max-w-xl text-3xl text-paper md:text-5xl">The room stays with the patient. The ledger does not.</p>
+          <p className="display max-w-xl text-3xl text-ivory md:text-5xl">The room stays with the patient. The ledger does not.</p>
         </div>
       </section>
 
@@ -83,7 +83,7 @@ function Home() {
         <div className="grid gap-px overflow-hidden rounded-3xl border border-line bg-line sm:grid-cols-2 lg:grid-cols-3">
           {proof.map((item) => (
             <div key={item.label} className="bg-white px-6 py-8">
-              <p className="display text-4xl text-pine">{item.figure}</p>
+              <p className="display text-4xl text-signal">{item.figure}</p>
               <p className="mt-2 text-ink-soft">{item.label}</p>
             </div>
           ))}
@@ -191,7 +191,7 @@ function Home() {
         </Link>
       </section>
 
-      <section className="bg-pine text-paper">
+      <section className="bg-pine text-ivory">
         <div className="mx-auto max-w-6xl px-5 py-16">
           <p className="text-sm font-medium tracking-wide text-copper">How we work</p>
           <h2 className="display mt-3 max-w-3xl text-4xl md:text-5xl">Five commitments. No softer version in the proposal.</h2>

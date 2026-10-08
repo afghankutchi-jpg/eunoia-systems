@@ -4,20 +4,22 @@
   --font-display: "Fraunces", "Iowan Old Style", Georgia, serif;
   --font-sans: "Outfit", system-ui, sans-serif;
 
-  --color-ink: #12081c;
-  --color-ink-soft: #241433;
-  --color-paper: #f7f4fc;
-  --color-paper-2: #efe8f8;
-  --color-white: #fcfbff;
-  --color-pine: #2e1065;
-  --color-pine-2: #4c1d95;
-  --color-signal: #5b21b6;
-  --color-signal-2: #f3e8ff;
-  --color-copper: #e9d5ff;
-  --color-copper-2: #ede9fe;
-  --color-muted: #3a314c;
-  --color-line: #ddd4ee;
-  --color-danger: #9b3d5c;
+  --color-ink: #f6f1e6;
+  --color-ink-soft: #ddd4c4;
+  --color-paper: #100e0c;
+  --color-paper-2: #181512;
+  --color-white: #1c1814;
+  --color-pine: #070605;
+  --color-pine-2: #4a3f30;
+  --color-signal: #c6b48a;
+  --color-signal-2: #f3ead8;
+  --color-copper: #e4d3ae;
+  --color-copper-2: #3a3226;
+  --color-ivory: #f7f1e6;
+  --color-on-gold: #1a140c;
+  --color-muted: #b7aa96;
+  --color-line: #3a3228;
+  --color-danger: #e7b4b4;
 
   --font-weight-normal: 600;
   --font-weight-medium: 700;
@@ -222,7 +224,7 @@ summary {
   z-index: 20;
   overflow: hidden;
   pointer-events: none;
-  mix-blend-mode: multiply;
+  mix-blend-mode: screen;
 }
 .particle-field {
   position: fixed;
@@ -236,9 +238,9 @@ summary {
   position: absolute;
   inset: -30%;
   background:
-    radial-gradient(ellipse at 10% 20%, #c4b5fd 0%, transparent 42%),
-    radial-gradient(ellipse at 90% 10%, #a78bfa 0%, transparent 40%),
-    radial-gradient(ellipse at 50% 100%, #ddd6fe 0%, transparent 46%);
+    radial-gradient(ellipse at 10% 20%, #c6b48a 0%, transparent 42%),
+    radial-gradient(ellipse at 90% 10%, #8a7350 0%, transparent 40%),
+    radial-gradient(ellipse at 50% 100%, #e4d3ae 0%, transparent 46%);
   animation: wash 9s ease-in-out infinite alternate;
 }
 .orb {
@@ -251,7 +253,7 @@ summary {
   left: -10vw;
   width: 46vw;
   height: 46vw;
-  background: radial-gradient(circle, #8b5cf6 0%, #c4b5fd 42%, transparent 70%);
+  background: radial-gradient(circle, #c6b48a 0%, #8a7350 42%, transparent 70%);
   animation: orb-a 11s ease-in-out infinite alternate;
 }
 .orb-b {
@@ -259,7 +261,7 @@ summary {
   bottom: -10vh;
   width: 40vw;
   height: 40vw;
-  background: radial-gradient(circle, #6d28d9 0%, #ddd6fe 45%, transparent 72%);
+  background: radial-gradient(circle, #e4d3ae 0%, #6e5b3e 45%, transparent 72%);
   animation: orb-b 13s ease-in-out infinite alternate;
 }
 .orb-c {
@@ -267,7 +269,7 @@ summary {
   left: 20vw;
   width: 28vw;
   height: 28vw;
-  background: radial-gradient(circle, #e9d5ff 0%, transparent 68%);
+  background: radial-gradient(circle, #f3ead8 0%, transparent 68%);
   animation: orb-c 8s ease-in-out infinite alternate;
 }
 .atmosphere-sheen {
@@ -276,14 +278,14 @@ summary {
   left: -50%;
   width: 35%;
   height: 160%;
-  background: linear-gradient(90deg, transparent, #7c3aed 45%, transparent);
+  background: linear-gradient(90deg, transparent, #c6b48a 45%, transparent);
   opacity: 0.55;
   animation: sheen 7s linear infinite;
 }
 .atmosphere-grid {
   position: absolute;
   inset: -10%;
-  background-image: radial-gradient(circle, #5b21b6 1.3px, transparent 1.6px);
+  background-image: radial-gradient(circle, #c6b48a 1.3px, transparent 1.6px);
   background-size: 22px 22px;
   opacity: 0.55;
   animation: drift 10s linear infinite;

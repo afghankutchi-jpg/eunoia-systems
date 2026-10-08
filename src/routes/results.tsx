@@ -23,7 +23,7 @@ function ResultsPage() {
       />
       <section className="mx-auto grid max-w-6xl gap-4 px-5 py-12 sm:grid-cols-2 lg:grid-cols-3">
         {proof.map((item) => (
-          <article key={item.label} className="rounded-3xl bg-pine p-6 text-paper">
+          <article key={item.label} className="rounded-3xl bg-pine p-6 text-ivory">
             <p className="display text-4xl">{item.figure}</p>
             <p className="mt-2 text-signal-2">{item.label}</p>
           </article>

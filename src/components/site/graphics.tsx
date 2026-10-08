@@ -48,7 +48,7 @@ export function RevenueDial() {
           {stages.map((stage, index) => (
             <p
               key={stage}
-              className="stage-word display absolute inset-0 flex items-center justify-center text-2xl text-pine"
+              className="stage-word display absolute inset-0 flex items-center justify-center text-2xl text-signal"
               style={{ animationDelay: `${index * 3}s` }}
             >
               {stage}
@@ -82,7 +82,7 @@ export function ClaimBeads() {
 export function Marquee({ items }: { items: string[] }) {
   const row = [...items, ...items];
   return (
-    <div className="marquee w-full max-w-full overflow-hidden border-y border-pine-2 bg-pine text-paper">
+    <div className="marquee w-full max-w-full overflow-hidden border-y border-pine-2 bg-pine text-ivory">
       <div className="marquee-track flex w-max">
         {row.map((item, index) => (
           <span key={`${item}-${index}`} className="flex items-center gap-8 px-4 py-4 text-sm tracking-wide" aria-hidden={index >= items.length}>
@@ -139,7 +139,7 @@ export function CycleStory() {
               ))}
             </div>
           </div>
-          <div className="col-span-7 rounded-3xl bg-pine p-10 text-paper">
+          <div className="col-span-7 rounded-3xl bg-pine p-10 text-ivory">
             <p className="text-sm tracking-widest text-copper">{cycle[step]?.id}</p>
             <h3 className="display mt-3 text-5xl">{cycle[step]?.title}</h3>
             <p className="mt-4 max-w-xl text-lg text-signal-2">{cycle[step]?.body}</p>

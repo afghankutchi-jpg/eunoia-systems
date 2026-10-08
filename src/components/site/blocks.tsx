@@ -33,7 +33,7 @@ export function CtaBand({
   body?: string;
 }) {
   return (
-    <section className="bg-pine text-paper">
+    <section className="bg-pine text-ivory">
       <div className="mx-auto flex max-w-6xl flex-col gap-6 px-5 py-16 md:flex-row md:items-end md:justify-between">
         <div className="max-w-xl">
           <h2 className="display text-4xl md:text-5xl">{title}</h2>
@@ -42,7 +42,7 @@ export function CtaBand({
         <Link
           to="/contact"
           search={{ interest: "" }}
-          className="tap inline-flex min-h-12 items-center justify-center rounded-full bg-signal px-6 font-medium text-paper"
+          className="tap inline-flex min-h-12 items-center justify-center rounded-full bg-signal px-6 font-medium text-on-gold"
         >
           Request a revenue review
         </Link>

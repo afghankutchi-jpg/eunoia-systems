@@ -41,7 +41,7 @@ export function SiteFrame({ children }: { children: ReactNode }) {
       </a>
       <header className="sticky top-0 z-40 border-b border-line/80 bg-paper/90 backdrop-blur">
         <div className="mx-auto flex max-w-6xl items-center justify-between gap-4 px-5 py-3">
-          <Link to="/" className="inline-flex shrink-0 items-center rounded-full bg-ink px-3 py-1.5" onClick={() => setOpen(false)}>
+          <Link to="/" className="inline-flex shrink-0 items-center rounded-full bg-pine px-3 py-1.5" onClick={() => setOpen(false)}>
             <img src="/logo-wordmark.png" alt="Eunoia Systems" className="h-11 w-auto sm:h-12" />
           </Link>
           <nav className="hidden items-center gap-6 lg:flex" aria-label="Primary">
@@ -61,7 +61,7 @@ export function SiteFrame({ children }: { children: ReactNode }) {
             <Link
               to="/contact"
               search={{ interest: "" }}
-              className="tap hidden min-h-11 items-center rounded-full bg-pine px-4 text-sm font-medium text-paper sm:inline-flex"
+              className="tap hidden min-h-11 items-center rounded-full bg-signal px-4 text-sm font-medium text-on-gold sm:inline-flex"
             >
               Request a review
             </Link>
@@ -97,7 +97,7 @@ export function SiteFrame({ children }: { children: ReactNode }) {
                 {service.title}
               </Link>
             ))}
-            <Link to="/contact" search={{ interest: "" }} className="tap mt-6 inline-flex min-h-12 items-center justify-center rounded-full bg-pine text-paper" onClick={() => setOpen(false)}>
+            <Link to="/contact" search={{ interest: "" }} className="tap mt-6 inline-flex min-h-12 items-center justify-center rounded-full bg-signal text-on-gold" onClick={() => setOpen(false)}>
               Request a review
             </Link>
           </nav>
@@ -107,7 +107,7 @@ export function SiteFrame({ children }: { children: ReactNode }) {
       <footer className="relative z-40 border-t border-line bg-paper-2">
         <div className="mx-auto grid max-w-6xl gap-10 px-5 py-14 md:grid-cols-12">
           <div className="md:col-span-4">
-            <img src="/logo-gold.png" alt="Eunoia Systems" className="w-44 rounded-3xl bg-ink p-4" />
+            <img src="/logo-gold.png" alt="Eunoia Systems" className="w-44 rounded-3xl bg-pine p-4" />
             <p className="mt-3 max-w-xs text-ink-soft">{company.tagline}</p>
             <p className="mt-6 text-sm text-ink-soft">
               {company.address}
