@@ -49,7 +49,10 @@ function Home() {
           <p className="mt-8 text-sm text-muted">{company.tagline}</p>
         </div>
         <div className="min-w-0 md:col-span-5">
-          <div className="relative overflow-hidden rounded-3xl border border-line bg-white p-6">
+          <div className="rounded-3xl bg-ink px-8 py-8">
+            <img src="/logo-gold.png" alt="Eunoia Systems" className="mx-auto w-full max-w-sm" />
+          </div>
+          <div className="relative mt-4 overflow-hidden rounded-3xl border border-line bg-white p-6">
             <img src="/images/rings.jpg" alt="" className="photo-ken pointer-events-none absolute inset-0 h-full w-full object-cover opacity-35" />
             <div className="relative">
               <RevenueDial />
