@@ -7,7 +7,7 @@ export const Route = createFileRoute("/services/")({
   head: () => ({
     meta: [
       { title: "Services · Eunoia Systems" },
-      { name: "description", content: "Front office, medical billing, A/R recovery, credentialing, denial management, patient financials, value-based care, and coding integrity." },
+      { name: "description", content: "Front office, billing, charge capture, prior authorization, A/R, denials, credentialing, contracting, patient financials, analytics, value-based care, coding, and compliance." },
     ],
   }),
   component: ServicesPage,
@@ -19,7 +19,7 @@ function ServicesPage() {
       <PageHero
         eyebrow="Services"
         title="The cycle, taken apart so it can be staffed."
-        lede="Each service is a full page because each one fails differently. Hire the station that is leaking, or hire the whole path. The handoffs are written either way."
+        lede="Thirteen stations, each staffed as its own page because each one fails differently. Hire the station that is leaking, or hire the path. The handoffs are written either way, and every page says what the practice actually receives."
       />
       <section className="mx-auto grid max-w-6xl gap-4 px-5 py-16">
         {services.map((service, index) => (
