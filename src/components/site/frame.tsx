@@ -7,6 +7,7 @@ import { ParticleField } from "@/components/site/particles";
 
 const links = [
   { to: "/services", label: "Services" },
+  { to: "/calculators", label: "Calculators" },
   { to: "/who-we-serve", label: "Practices" },
   { to: "/specialties", label: "Specialties" },
   { to: "/process", label: "The cycle" },
@@ -136,6 +137,7 @@ export function SiteFrame({ children }: { children: ReactNode }) {
               <li><Link to="/process" className="hover:text-ink">The cycle</Link></li>
               <li><Link to="/compliance" className="hover:text-ink">Compliance</Link></li>
               <li><Link to="/results" className="hover:text-ink">Results</Link></li>
+              <li><Link to="/calculators" className="hover:text-ink">Calculators</Link></li>
               <li><Link to="/about" className="hover:text-ink">About</Link></li>
               <li><Link to="/insights" className="hover:text-ink">Insights</Link></li>
               <li><Link to="/contact" search={{ interest: "" }} className="hover:text-ink">Contact</Link></li>

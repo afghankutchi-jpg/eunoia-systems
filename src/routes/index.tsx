@@ -65,6 +65,9 @@ function Home() {
             </li>
           ))}
         </ul>
+        <Link to="/calculators" className="mt-8 inline-block font-medium text-signal">
+          Check days in A/R, collection, denials, and first-pass
+        </Link>
       </section>
 
       <section className="mx-auto max-w-6xl px-5 pb-20">
