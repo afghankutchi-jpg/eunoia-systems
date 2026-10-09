@@ -20,6 +20,9 @@ function InsightsPage() {
         title="Field notes, not a content calendar."
         lede="Four pieces on the decisions that actually move a revenue cycle. They are written for an administrator who has already seen a dashboard and still has a question."
       />
+      <section className="mx-auto max-w-6xl px-5 pt-12">
+        <img src="/images/consult.jpg" alt="A doctor and patient talking in a small clinic" className="aspect-[21/9] w-full rounded-3xl object-cover" />
+      </section>
       <section className="mx-auto grid max-w-6xl gap-4 px-5 py-16">
         {articles.map((article) => (
           <Link key={article.slug} to="/insights/$slug" params={{ slug: article.slug }} className="grid gap-3 rounded-3xl border border-line bg-white p-6 md:grid-cols-12 md:items-end">

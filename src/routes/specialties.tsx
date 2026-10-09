@@ -35,6 +35,9 @@ function SpecialtiesPage() {
         title="The denial is usually local to the specialty."
         lede="A family practice and an orthopedic group do not fail in the same place. Coverage below is how the work is tuned — not a claim that every code set on earth has a brochure."
       />
+      <section className="mx-auto max-w-6xl px-5 pt-12">
+        <img src="/images/hallway.jpg" alt="A clinician with a family in a small clinic corridor" className="aspect-[21/9] w-full rounded-3xl object-cover" />
+      </section>
       <section className="mx-auto max-w-6xl px-5 py-12">
         <div className="flex flex-col gap-4 md:flex-row md:items-center md:justify-between">
           <label className="block w-full md:max-w-sm">

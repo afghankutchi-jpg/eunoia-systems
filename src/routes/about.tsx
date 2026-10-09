@@ -22,7 +22,7 @@ function AboutPage() {
       />
       <div className="mx-auto max-w-6xl px-5 pt-12">
         <div className="overflow-hidden rounded-3xl">
-          <img src="/images/desk.jpg" alt="A desk of unreadable files, a pen, and lilac light" className="photo-ken aspect-video w-full object-cover" />
+          <img src="/images/exam.jpg" alt="A physician with a patient in a small clinic exam room" className="photo-ken aspect-video w-full object-cover" />
         </div>
       </div>
       <article className="mx-auto max-w-6xl px-5 py-16">
@@ -64,6 +64,7 @@ function AboutPage() {
         </div>
         <div className="ruled mt-16 rounded-3xl border border-line p-8">
           <h2 className="display text-3xl">Why practices hand this over</h2>
+          <p className="mt-3 max-w-3xl text-ink-soft">The desk is already full. The claim still has to leave correctly.</p>
           <p className="mt-4 max-w-3xl text-lg text-ink-soft">
             Protocols change often enough to be a full-time job. Outsourcing billing and the compliance chores around it gives that job to people who do only that. Claims go in correctly and on time. Reports are shaped to the practice instead of pulled from a single template. The point of the engagement is cash flow with credibility intact — with patients, with staff, and with payers.
           </p>

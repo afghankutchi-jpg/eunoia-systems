@@ -4,22 +4,22 @@
   --font-display: "Fraunces", "Iowan Old Style", Georgia, serif;
   --font-sans: "Outfit", system-ui, sans-serif;
 
-  --color-ink: #f6f1e6;
-  --color-ink-soft: #ddd4c4;
-  --color-paper: #100e0c;
-  --color-paper-2: #181512;
-  --color-white: #1c1814;
-  --color-pine: #070605;
-  --color-pine-2: #4a3f30;
-  --color-signal: #c6b48a;
-  --color-signal-2: #f3ead8;
-  --color-copper: #e4d3ae;
-  --color-copper-2: #3a3226;
-  --color-ivory: #f7f1e6;
-  --color-on-gold: #1a140c;
-  --color-muted: #b7aa96;
-  --color-line: #3a3228;
-  --color-danger: #e7b4b4;
+  --color-ink: #f4f7fb;
+  --color-ink-soft: #d5dee8;
+  --color-paper: #0e1622;
+  --color-paper-2: #152033;
+  --color-white: #1a2740;
+  --color-pine: #0a1220;
+  --color-pine-2: #31445e;
+  --color-signal: #c6a15a;
+  --color-signal-2: #e7eef6;
+  --color-copper: #d4bc86;
+  --color-copper-2: #243044;
+  --color-ivory: #f7f4ee;
+  --color-on-gold: #1c160e;
+  --color-muted: #a9b6c6;
+  --color-line: #2c3e56;
+  --color-danger: #f0c2c2;
 
   --font-weight-normal: 600;
   --font-weight-medium: 700;
@@ -238,9 +238,9 @@ summary {
   position: absolute;
   inset: -30%;
   background:
-    radial-gradient(ellipse at 10% 20%, #c6b48a 0%, transparent 42%),
-    radial-gradient(ellipse at 90% 10%, #8a7350 0%, transparent 40%),
-    radial-gradient(ellipse at 50% 100%, #e4d3ae 0%, transparent 46%);
+    radial-gradient(ellipse at 10% 20%, #c6a15a 0%, transparent 42%),
+    radial-gradient(ellipse at 90% 10%, #6e8eb8 0%, transparent 40%),
+    radial-gradient(ellipse at 50% 100%, #d4bc86 0%, transparent 46%);
   animation: wash 9s ease-in-out infinite alternate;
 }
 .orb {

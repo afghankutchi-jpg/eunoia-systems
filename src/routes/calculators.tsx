@@ -24,6 +24,9 @@ function CalculatorsPage() {
         title="Four figures a practice can check itself."
         lede="Nothing is stored. These are the ordinary billing ratios, written out so the result is not a black box. They describe a period you choose. They are not a promise about a future month."
       />
+      <section className="mx-auto max-w-6xl px-5 pt-12">
+        <img src="/images/reception.jpg" alt="A small clinic front desk, with a physician and a patient" className="aspect-[21/9] w-full rounded-3xl object-cover" />
+      </section>
       <div className="mx-auto max-w-3xl px-5">
         <DaysInAr />
         <NetCollection />

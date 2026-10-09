@@ -85,6 +85,7 @@ function ContactPage() {
           </p>
         </form>
         <aside className="md:col-span-5">
+          <img src="/images/consult.jpg" alt="A doctor and patient in conversation at a small clinic" className="mb-6 aspect-[4/3] w-full rounded-3xl object-cover" />
           <div className="rounded-3xl bg-pine p-8 text-ivory">
             <p className="text-sm tracking-wide text-copper">Direct</p>
             <a href={company.phoneHref} className="display mt-4 block text-3xl">{company.phone}</a>

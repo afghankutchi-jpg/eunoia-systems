@@ -20,6 +20,12 @@ function ServicesPage() {
         title="The cycle, taken apart so it can be staffed."
         lede="Thirteen stations, each staffed as its own page because each one fails differently. Hire the station that is leaking, or hire the path. The handoffs are written either way, and every page says what the practice actually receives."
       />
+      <section className="mx-auto max-w-6xl px-5 pt-12">
+        <figure>
+          <img src="/images/exam.jpg" alt="A physician with a patient in a neighborhood clinic" className="aspect-[21/9] w-full rounded-3xl object-cover" />
+          <figcaption className="mt-3 text-sm text-muted">Every service below exists so this room does not have to become a billing office.</figcaption>
+        </figure>
+      </section>
       <section className="mx-auto max-w-6xl px-5 py-16">
         <ul className="divide-y divide-line border-y border-line">
           {services.map((service) => (

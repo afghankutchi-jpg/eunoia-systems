@@ -21,6 +21,12 @@ function ResultsPage() {
         title="Standards we will say out loud, and letters from practices."
         lede="The figures below are operating standards and a model of how an engagement is meant to move. The quotations are from practices, attributed the way they were given — by initial and setting, not as a trophy wall of full names."
       />
+      <section className="mx-auto max-w-6xl px-5 pt-12">
+        <figure>
+          <img src="/images/reception.jpg" alt="Staff and a patient at a small clinic front desk" className="aspect-[21/9] w-full rounded-3xl object-cover" />
+          <figcaption className="mt-3 text-sm text-muted">Results show up at the desk: fewer surprises, a claim that left on time, a balance someone can explain.</figcaption>
+        </figure>
+      </section>
       <section className="mx-auto grid max-w-6xl gap-4 px-5 py-12 sm:grid-cols-2 lg:grid-cols-3">
         {proof.map((item) => (
           <article key={item.label} className="rounded-3xl bg-pine p-6 text-ivory">

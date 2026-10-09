@@ -13,7 +13,7 @@ export const Route = createRootRoute({
       { name: "viewport", content: "width=device-width, initial-scale=1" },
       { title: APP_NAME },
       { name: "description", content: "Eunoia Systems supports healthcare practices with revenue cycle management, medical billing, A/R recovery, credentialing, and denial management." },
-      { name: "theme-color", content: "#100e0c" },
+      { name: "theme-color", content: "#0e1622" },
     ],
     links: [
       { rel: "icon", type: "image/svg+xml", href: "/favicon.svg" },

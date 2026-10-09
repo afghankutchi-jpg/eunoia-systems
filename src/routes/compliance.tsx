@@ -28,6 +28,9 @@ function CompliancePage() {
         title="Protect the chart. Then protect the claim."
         lede="Trust, in the company’s own words, means the privacy and security of client data come before convenience. The revenue cycle sits inside that duty — it does not get an exception because cash is waiting."
       />
+      <section className="mx-auto max-w-6xl px-5 pt-12">
+        <img src="/images/exam.jpg" alt="A physician and patient in a private exam room" className="aspect-[21/9] w-full rounded-3xl object-cover" />
+      </section>
       <section className="mx-auto grid max-w-6xl gap-4 px-5 py-16 md:grid-cols-2">
         {items.map((item) => (
           <article key={item.title} className="rounded-3xl border border-line bg-white p-6">

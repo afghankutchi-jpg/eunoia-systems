@@ -575,12 +575,12 @@ export const services: Service[] = [
 ];
 
 export const cycle = [
-  { id: "01", title: "Access", body: "The patient is scheduled, welcomed, and identified. Demographics are confirmed while the person is still in front of you." },
-  { id: "02", title: "Verify", body: "Coverage, benefits, referrals, and authorizations are known before the encounter creates a charge." },
-  { id: "03", title: "Document", body: "The note says what happened. Codes are chosen from that record, not from habit." },
-  { id: "04", title: "Submit", body: "A scrubbed claim leaves inside the filing limit and is watched until the payer accepts or returns it." },
-  { id: "05", title: "Post", body: "Payments, adjustments, and denials hit the account. Underpayments are visible the day they post." },
-  { id: "06", title: "Resolve", body: "Appeals, patient balances, and write-offs each get an ending. The cause of leakage is retired." },
+  { id: "01", title: "Access", body: "The patient is scheduled, welcomed, and identified. Demographics are confirmed while the person is still in front of you. A wrong date of birth here becomes a denial the biller cannot charm away." },
+  { id: "02", title: "Verify", body: "Coverage, benefits, referrals, and authorizations are known before the encounter creates a charge. If the plan needs a number, that number exists before the visit, not after the remit." },
+  { id: "03", title: "Document", body: "The note says what happened. Codes are chosen from that record, not from habit. What was done and not written down is not billed. What was billed and not supported is not defended." },
+  { id: "04", title: "Submit", body: "A scrubbed claim leaves inside the filing limit and is watched until the payer accepts or returns it. Submission is not the finish. Acceptance without a correction is." },
+  { id: "05", title: "Post", body: "Payments, adjustments, and denials hit the account. Underpayments are visible the day they post, against the amount the contract said the plan would pay." },
+  { id: "06", title: "Resolve", body: "Appeals, patient balances, and write-offs each get an ending. The cause of leakage is retired so the same claim is not rebuilt next month under a new account number." },
 ];
 
 export const proof = [

@@ -20,6 +20,9 @@ function TechnologyPage() {
         title="Your system stays the system of record."
         lede="Eunoia does not arrive with a rip-and-replace platform. Billing, follow-up, and reporting are configured around the software the practice already runs — any in-house system, including the ones below."
       />
+      <section className="mx-auto max-w-6xl px-5 pt-12">
+        <img src="/images/reception.jpg" alt="Front desk of a small clinic with staff and a patient" className="aspect-[21/9] w-full rounded-3xl object-cover" />
+      </section>
       <section className="mx-auto max-w-6xl px-5 py-16">
         <p className="max-w-3xl text-lg text-ink-soft">
           Names below are systems practices commonly operate. Listing them is not a claim of partnership, certification, or a preferred-vendor badge. It is a statement of fit: the work happens in your build, with your users, under your security rules.

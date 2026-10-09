@@ -43,6 +43,7 @@ function ServicePage() {
       <section className="border-y border-line">
         <div className="mx-auto max-w-6xl px-5 py-16">
           <h2 className="display text-4xl">What the practice receives</h2>
+          <p className="mt-3 max-w-2xl text-lg text-ink-soft">Not a mood. A list the administrator can open: dates, owners, and the document that proves the step happened.</p>
           <ol className="mt-8 divide-y divide-line border-y border-line">
             {service.record.map((item) => (
               <li key={item} className="py-4 text-lg text-ink">{item}</li>
@@ -53,6 +54,7 @@ function ServicePage() {
       <section className="border-y border-line bg-white">
         <div className="mx-auto max-w-6xl px-5 py-16">
           <h2 className="display text-4xl">What is actually done</h2>
+          <p className="mt-3 max-w-2xl text-lg text-ink-soft">The work behind the heading. Each line is a task with a person on it, not a capability slide.</p>
           <div className="mt-8 divide-y divide-line border-y border-line">
             {service.capabilities.map((item) => (
               <article key={item.title} className="grid gap-2 py-6 md:grid-cols-12 md:gap-8">
@@ -65,6 +67,7 @@ function ServicePage() {
       </section>
       <section className="mx-auto max-w-6xl px-5 py-16">
         <h2 className="display text-4xl">How an engagement moves</h2>
+        <p className="mt-3 max-w-2xl text-lg text-ink-soft">Four steps, in order. The next one does not start because the calendar turned. It starts because the previous one produced something.</p>
         <ol className="mt-8 divide-y divide-line border-y border-line">
           {service.steps.map((step, index) => (
             <li key={step.title} className="grid gap-2 py-6 md:grid-cols-12 md:gap-8">
@@ -78,6 +81,7 @@ function ServicePage() {
       <section className="bg-pine text-ivory">
         <div className="mx-auto max-w-6xl px-5 py-16">
           <h2 className="display text-4xl">Standards for this work</h2>
+          <p className="mt-3 max-w-2xl text-lg text-signal-2">The lines we will repeat in a review. If a month misses one, the report says so.</p>
           <ul className="mt-8 max-w-3xl space-y-3">
             {service.standards.map((item) => (
               <li key={item} className="text-lg text-signal-2">{item}</li>
@@ -87,6 +91,7 @@ function ServicePage() {
       </section>
       <section className="mx-auto max-w-6xl px-5 py-16">
         <h2 className="display text-3xl">Continues into</h2>
+        <p className="mt-3 max-w-2xl text-ink-soft">The stations that usually sit on either side of this one. A leak here is often born next door.</p>
         <div className="mt-6 flex flex-col gap-3">
           {related.map((item) => (
             <Link key={item.slug} to="/services/$slug" params={{ slug: item.slug }} className="text-lg text-signal">
